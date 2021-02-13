@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="icon">
+    <title>Martfury Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/Linearicons/Font/demo-files/demo.css">
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="plugins/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="plugins/apexcharts-bundle/dist/apexcharts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header--mobile">
+        <div class="header__left">
+            <button class="ps-drawer-toggle"><i class="icon icon-menu"></i></button><img src="" alt="">
+        </div>
+        <div class="header__center"><a class="ps-logo" href="#"><img src="img/logo.png" alt=""></a></div>
+        <div class="header__right"><a class="header__site-link" href="#"><i class="icon-exit-right"></i></a></div>
+    </header>
+    <aside class="ps-drawer--mobile">
+        <div class="ps-drawer__header">
+            <h4> Menu</h4>
+            <button class="ps-drawer__close"><i class="icon icon-cross"></i></button>
+        </div>
+        <div class="ps-drawer__content">
+            <ul class="menu">
+                <li><a class="active" href="index.html"><i class="icon-home"></i>Dashboard</a></li>
+                <li><a href="vendors.html"><i class="icon-circle"></i>Vendors</a></li>
+                <li><a href="products.html"><i class="icon-database"></i>Products</a></li>
+                <li><a href="orders.html"><i class="icon-bag2"></i>Requests</a></li>
+                <li><a href="customers.html"><i class="icon-users2"></i>Customers</a></li>
+                <li><a href="Categories.html"><i class="icon-papers"></i>Categories</a></li>
+                <li><a href="settings.html"><i class="icon-cog"></i>Settings</a></li>
+            </ul>
+        </div>
+    </aside>
+    <div class="ps-site-overlay"></div>
+    <main class="ps-main">
+        <div class="ps-main__sidebar">
+            <div class="ps-sidebar">
+                <div class="ps-sidebar__top">
+                    <div class="ps-block--user-wellcome">
+                        <div class="ps-block__left"><img src="img/user/admin.jpg" alt="" /></div>
+                        <div class="ps-block__right">
+                            <p>Hello,<a href="#">Admin</a></p>
+                        </div>
+                        <div class="ps-block__action"><a href="#"><i class="icon-exit"></i></a></div>
+                    </div>
+                </div>
+                <div class="ps-sidebar__content">
+                    <div class="ps-sidebar__center">
+                        <ul class="menu">
+                            <li><a class="active" href="index.html"><i class="icon-home"></i>Dashboard</a></li>
+                            <li><a href="vendors.html"><i class="icon-circle"></i>Vendors</a></li>
+                            <li><a href="products.html"><i class="icon-database"></i>Products</a></li>
+                            <li><a href="orders.html"><i class="icon-bag2"></i>Requests</a></li>
+                            <li><a href="customers.html"><i class="icon-users2"></i>Customers</a></li>
+                            <li><a href="Categories.html"><i class="icon-papers"></i>Categories</a></li>
+                            <li><a href="settings.html"><i class="icon-cog"></i>Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ps-main__wrapper">
+            <header class="header--dashboard">
+                <div class="header__left">
+                    <h3>Dashboard</h3>
+                    <p>Everything here</p>
+                </div>
+                <div class="header__center">
+                    <form class="ps-form--search-bar" action="index.html" method="get">
+                        <input class="form-control" type="text" placeholder="Search something">
+                        <button><i class="icon-magnifier"></i></button>
+                    </form>
+                </div>
+                <div class="header__right"><a class="header__site-link" href="#"><span>View your store</span><i class="icon-exit-right"></i></a></div>
+            </header>
+            <section class="ps-dashboard">
+                <div class="ps-section__left">
+                    <div class="row">
+
+                    </div>
+                    <div class="ps-card">
+                        <div class="ps-card__header">
+                            <h4>Recent Quote Requests</h4>
+                        </div>
+                        <div class="ps-card__content">
+                            <div class="table-responsive">
+                                <table class="table ps-table">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Date</th>
+                                            <th>Product</th>
+                                            <th>Status</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#A580</td>
+                                            <td><strong> Aug, 15, 2020</strong></td>
+                                            <td><a href="order-detail.html"><strong>Unero Black Military</strong></a></td>
+                                            <td><span class="ps-badge success">Attended</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown"><a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-ellipsis"></i></a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Edit</a><a class="dropdown-item" href="#">Delete</a></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#B260</td>
+                                            <td><strong> Aug, 15, 2020</strong></td>
+                                            <td><a href="order-detail.html"><strong>Marsh Speaker</strong></a></td>
+                                            <td><span class="ps-badge gray">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown"><a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-ellipsis"></i></a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Edit</a><a class="dropdown-item" href="#">Delete</a></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#A583</td>
+                                            <td><strong> Aug, 15, 2020</strong></td>
+                                            <td><a href="order-detail.html"><strong>Lined Blend T-Shirt</strong></a></td>
+                                            <td><span class="ps-badge success">Attended</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown"><a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-ellipsis"></i></a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Edit</a><a class="dropdown-item" href="#">Delete</a></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#A583</td>
+                                            <td><strong> Aug, 15, 2020</strong></td>
+                                            <td><a href="order-detail.html"><strong>DJI MAcvic Quadcopter</strong></a></td>
+                                            <td><span class="ps-badge gray">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown"><a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-ellipsis"></i></a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Edit</a><a class="dropdown-item" href="#">Delete</a></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#A112</td>
+                                            <td><strong> Aug, 15, 2020</strong></td>
+                                            <td><a href="order-detail.html"><strong>Black T-Shirt</strong></a></td>
+                                            <td><span class="ps-badge success">Attended</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown"><a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-ellipsis"></i></a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Edit</a><a class="dropdown-item" href="#">Delete</a></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="ps-card__footer"><a class="ps-card__morelink" href="orders.htmls">view full requests<i class="icon icon-chevron-right"></i></a></div>
+                    </div>
+                </div>
+                <div class="ps-section__right">
+                    <section class="ps-card ps-card--statics">
+                        <div class="ps-card__header">
+                            <h4>Statics</h4>
+                            <div class="ps-card__sortby"><i class="icon-calendar-empty"></i>
+                                <div class="form-group--select">
+                                    <select class="form-control">
+                                        <option value="1">Last 30 days</option>
+                                        <option value="2">Last 90 days</option>
+                                        <option value="3">Last 180 days</option>
+                                    </select><i class="icon-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ps-card__content">
+                            <div class="ps-block--stat yellow">
+                                <div class="ps-block__left"><span><i class="icon-cart"></i></span></div>
+                                <div class="ps-block__content">
+                                    <p>Requests</p>
+                                    <h4>254<small class="asc"><i class="icon-arrow-up"></i><span>12,5%</span></small></h4>
+                                </div>
+                            </div>
+                            <div class="ps-block--stat green">
+                                <div class="ps-block__left"><span><i class="icon-cart"></i></span></div>
+                                <div class="ps-block__content">
+                                    <p>Attended</p>
+                                    <h4>200<small class="desc"><i class="icon-arrow-down"></i><span>0.32%</span></small></h4>
+                                </div>
+                            </div>
+
+                            <div class="ps-block--stat pink">
+                                <div class="ps-block__left"><span><i class="icon-cart"></i></span></div>
+                                <div class="ps-block__content">
+                                    <p>Products</p>
+                                    <h4>150<small class="desc"><i class="icon-arrow-down"></i><span>0.32%</span></small></h4>
+                                </div>
+                            </div>
+
+                            <div class="ps-block--stat blue">
+                                <div class="ps-block__left"><span><i class="icon-cart"></i></span></div>
+                                <div class="ps-block__content">
+                                    <p>Vendors</p>
+                                    <h4>23<small class="desc"><i class="icon-arrow-down"></i><span>0.32%</span></small></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/popper.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/jquery.matchHeight-min.js"></script>
+    <script src="plugins/select2/dist/js/select2.full.min.js"></script>
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="plugins/apexcharts-bundle/dist/apexcharts.min.js"></script>
+    <script src="js/chart.js"></script>
+    <!-- custom code-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
